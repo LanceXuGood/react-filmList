@@ -1,3 +1,6 @@
+/**
+ * Created by Administrator on 2017/4/7.
+ */
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -17,8 +20,10 @@ const vendor = [
 ];
 
 module.exports = {
-    entry : ['react-hot-loader/patch', 'webpack/hot/only-dev-server', 'webpack-dev-server/client?http://localhost:3000', 'babel-polyfill', path.resolve(__dirname, 'src/main.js')]
-    ,
+    entry : {
+        vendor: vendor,
+        app: ['babel-polyfill', path.resolve(__dirname, 'src/main.js')]
+    },
     devtool: 'cheap-module-eval-source-map',
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -128,6 +133,19 @@ module.exports = {
     context: __dirname,
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({name: 'vendor', minChunks: Infinity}),
+        new webpack.HashedModuleIdsPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+            beautify: false,
+            mangle: {screw_ie8: true},
+            compress: {
+                screw_ie8: false,  // React doesn't support IE8
+                warnings: false,
+                unused: true,
+                dead_code: true,
+            },
+            output: {screw_ie8: true, comments: false},
+        }),
         new ExtractTextPlugin({
             filename: '[name].[hash:8].css',
             allChunks: true,
@@ -146,8 +164,6 @@ module.exports = {
                 'NODE_ENV': JSON.stringify(ENV)
             }
         }),
-        new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
-        new webpack.NamedModulesPlugin()
     ],
 };

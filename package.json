@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "lint": "eslint ./src --ext .js --ext .jsx --cache",
-    "build-dev": "webpack --config webpack.config.js --progress --colors"
+    "build-dev": "webpack --config webpack.config.js --progress --colors -p",
+    "build-pro": "webpack --config webpack.config.build.js --progress --colors -p"
   },
   "author": "",
   "license": "ISC",

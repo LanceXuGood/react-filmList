@@ -1,6 +1,6 @@
 
 # react-xy react全家桶搭建
-react + react-router v4 + redux + eslint + webpack2
+webpack2 + es6 + babel + eslint + react + react-router v4 + redux 
 
 #启动 运行
     yarn install 
