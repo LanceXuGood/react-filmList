@@ -7,7 +7,7 @@ import {
 
 const BasicExample = () => (
     <Router>
-        
+
         <div>
             <ul>
                 <li><Link to="/">Home</Link></li>
@@ -25,11 +25,11 @@ const BasicExample = () => (
 );
 
 const Home = () => (
-    <div>[]
+    <div>
         <h1>Home</h1>
         <ul>
             <li>12</li>
-            <li style={{background:`url(${require("../images/1.jpg")})`}}>23</li>
+            <li>23</li>
             <li>34</li>
         </ul>
     </div>

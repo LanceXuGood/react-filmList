@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 //绑定react与redux；
 import { Provider } from 'react-redux';
-//1.热加载采用
+//1.热加载->引入组件
 import { AppContainer } from 'react-hot-loader';
 //es6promise补全
 es6Promise.polyfill();
@@ -36,7 +36,7 @@ ReactDOM.render(
     document.getElementById('app')
 );
 
-//2.热加载采用,这里需要注意，对于reducer可能也需要绑定
+//2.热加载采用-> 根组件绑定绑定 （3.绑定在store）
 if (module.hot) {
     module.hot.accept('./app', () => {
         const Index = require('./app').default;

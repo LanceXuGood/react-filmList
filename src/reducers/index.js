@@ -3,7 +3,6 @@ import {combineReducers} from 'redux';
 //路由的reducer绑进来
 import {routerReducer} from 'react-router-redux';
 
-
 //这里需要引入所有的reducer
 
 
@@ -13,5 +12,6 @@ const rootReducer = combineReducers({
     routing: routerReducer,
 
 });
+
 
 export default rootReducer;
