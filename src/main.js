@@ -8,6 +8,7 @@ import createHistory from 'history/createBrowserHistory';
 import { Provider } from 'react-redux';
 //1.热加载->引入组件
 import { AppContainer } from 'react-hot-loader';
+import './common/lib/index.less';
 //es6promise补全
 es6Promise.polyfill();
 

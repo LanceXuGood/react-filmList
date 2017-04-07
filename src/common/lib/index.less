@@ -1,0 +1,339 @@
+@import "./variable.less";
+@import "./antd.less";
+
+// 公用的css
+body {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #666;
+//font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
+//font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 8px !important;
+	height: 8px !important;
+}
+
+::-webkit-scrollbar-track-piece {
+}
+
+::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal {
+	background-color: #888;
+	border-radius: 80px;
+	height: 150px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+	background: #666
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+	background: #666
+}
+
+::-webkit-scrollbar-button {
+	background-color: #666;
+	display: none;
+}
+
+// 对齐
+   .text-center {
+	   text-align: center;
+   }
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-break {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.color-success {
+	color: @success-color;
+}
+
+.color-err {
+	color: @error-color;
+}
+
+// 文本控制
+   .text-disabled {
+	   color: #ccc;
+   }
+
+.text-enabled {
+	color: #2db7f5;
+}
+
+// 列表商品头部
+   .text-productinfo {
+   .clearfix();
+	   min-width: 250px;
+.text-productinfo-img {
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+
+.text-productinfo-text {
+	width: 180px;
+	margin-left: 10px;
+	text-align: left;
+	float: left;
+	line-height: 24px;
+p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+}
+}
+
+// 通用操作
+   .operation {
+> .ant-btn {
+	  margin-right: 5px;
+  }
+}
+
+// 垂直样式
+   .operation-vertical {
+.operation-item {
+	display: block;
+	margin-bottom: 5px;
+}
+}
+
+.operation-item {
+
+}
+
+.ant-input-number-handler-wrap {
+	display: none;
+}
+
+/* fixed table空数据会变形 */
+.ant-spin-container {
+	position: relative;
+}
+
+.ant-table-placeholder {
+	border: 1px solid @border-color-split;
+}
+
+// modal控制顶距离
+   .modal-top {
+	   top: 20px;
+   }
+
+// banner图预览图片100%
+.add-uploadbanner-img {
+	width: 100%;
+}
+
+.ant-layout-aside .ant-layout-container {
+	margin-top: 24px;
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-bottom: 0;
+}
+
+// 黑色风格的radio组
+   .ant-radio-group-dark {
+.ant-radio-button-wrapper {
+	color: #39404a;
+	border: 1px solid #39404a;
+	border-right-width: 0;
+	background: #fff;
+}
+.ant-radio-button-wrapper:hover, .ant-radio-button-wrapper-focused {
+//color: #39404a;
+}
+
+.ant-radio-button-wrapper:first-child {
+	border-left-color: #39404a;
+	border-radius: 2px 0 0 2px;
+}
+
+.ant-radio-button-wrapper:last-child {
+	border-radius: 0 2px 2px 0;
+	border-right-width: 1px;
+}
+.ant-radio-button-wrapper-checked:first-child {
+	border-color: #39404a;
+}
+.ant-radio-button-wrapper-checked {
+	background: #39404a;
+	border-color: #39404a;
+	color: #fff;
+	box-shadow: -1px 0 0 0 #39404a;
+}
+}
+
+// 灰色风格的radio组
+   .ant-radio-group-grey {
+.ant-radio-button-wrapper {
+	color: #5e6d82;
+	border: 1px solid #5e6d82;
+	border-right-width: 0;
+	background: #fff;
+}
+.ant-radio-button-wrapper:hover, .ant-radio-button-wrapper-focused {
+//color: #39404a;
+}
+
+.ant-radio-button-wrapper:first-child {
+	border-left-color: #5e6d82;
+	border-radius: 2px 0 0 2px;
+}
+
+.ant-radio-button-wrapper:last-child {
+	border-radius: 0 2px 2px 0;
+	border-right-width: 1px;
+}
+.ant-radio-button-wrapper-checked:first-child {
+	border-color: #5e6d82;
+}
+.ant-radio-button-wrapper-checked {
+	background: #5e6d82;
+	border-color: #5e6d82;
+	color: #fff;
+	box-shadow: -1px 0 0 0 #5e6d82;
+}
+}
+
+// 竖行风格的radio组
+   .ant-radio-group-default {
+.ant-radio-button-wrapper {
+	color: #39404a;
+	border-color: #5e6d82;
+	border-radius: 100px;
+//border-right-width: 0;
+	background: #fff;
+}
+.ant-radio-button-wrapper:hover, .ant-radio-button-wrapper-focused {
+//color: #39404a;
+}
+
+.ant-radio-button-wrapper:first-child {
+//border-left-color: #5e6d82;
+//border-radius: 100px;
+}
+
+.ant-radio-button-wrapper:last-child {
+//border-radius: 100px;
+//border-right-width: 1px;
+}
+.ant-radio-button-wrapper-checked:first-child {
+//border-color: #5e6d82;
+}
+.ant-radio-button-wrapper-checked {
+	background: #009dfc;
+	border-radius: 100px;
+	border-color: #5e6d82;
+	color: #fff;
+//box-shadow: -1px 0 0 0 #5e6d82;
+}
+}
+
+.ant-btn {
+	border-radius: 2px;
+	font-weight: normal;
+}
+
+.ant-btn-info {
+	border-color: #39404a;
+	background: #39404a;
+	color: #fff;
+}
+
+.ant-btn-danger {
+	border-color: #eb4f38;
+	background: #eb4f38;
+	color: #fff;
+}
+
+.ant-btn-plain {
+	border-color: #39404a;
+	background: #fff;
+	color: #39404a;
+}
+
+.ant-tabs-extra-content {
+	line-height: 26px;
+}
+
+.ant-radio-group-lk {
+	text-align: center;
+	margin: 22px auto;
+.ant-radio-button-wrapper {
+	width: 261px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	color: #009dfc;
+span:last-child {
+	line-height: 40px;
+}
+}
+.ant-radio-button-wrapper-checked {
+	background: #009dfc;
+	color: #ffffff;
+}
+.ant-radio-button-wrapper:first-child, .ant-radio-button-wrapper:last-child {
+	border-radius: 4px 0 0 4px;
+}
+
+}
+
+.ant-switch {
+	background-color: #ccc;
+}
+
+.ant-switch-checked {
+	background-color: @primary-color;
+}
+
+// 动画
+
+   .animated {
+	   -webkit-animation-duration: 1s;
+	   animation-duration: 1s;
+	   -webkit-animation-fill-mode: both;
+	   animation-fill-mode: both;
+   }
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@media (max-height:740px){
+	.ant-modal{
+		top:10px;
+	}
+}

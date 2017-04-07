@@ -116,7 +116,7 @@ module.exports = {
                                 'react-hot-loader/babel',
                                 'transform-decorators-legacy',
                                 'transform-class-properties',
-                                ['import', {'libraryName': 'antd', 'style': 'css'}]
+                                //['import', {'libraryName': 'antd', 'style': 'css'}]
                             ]
                         }
                     },
@@ -141,6 +141,28 @@ module.exports = {
                             }
                         },
                         'sass-loader',
+                    ]
+                }),
+                exclude: /node_modules/
+            },
+            {
+                test: /\.less/,
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                importLoaders: 1,
+                            }
+                        },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                sourceMap: 'inline',
+                            }
+                        },
+                        'less-loader',
                     ]
                 }),
                 exclude: /node_modules/
