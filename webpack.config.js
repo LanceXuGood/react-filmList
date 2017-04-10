@@ -2,9 +2,10 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 const ENV = process.env.NODE_ENV = process.env.ENV = 'development';
 const isDev = ENV !== 'production';
-
+console.log(isDev)
 const vendor = [
     'react',
     'react-dom',
@@ -127,14 +128,13 @@ module.exports = {
     },
     context: __dirname,
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin({name: 'vendor', minChunks: Infinity}),
-        new ExtractTextPlugin({
+         new ExtractTextPlugin({
             filename: '[name].[hash:8].css',
             allChunks: true,
-            disable: isDev,   // Disable css extracting on development
+            disable: !isDev,   // Disable css extracting on development
             ignoreOrder: true,
         }),
-
+        new webpack.optimize.CommonsChunkPlugin({name: 'vendor', minChunks: Infinity}),
         new HtmlWebpackPlugin({
             title: '',
             hash: true,
