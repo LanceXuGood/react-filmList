@@ -4,13 +4,14 @@ import {combineReducers} from 'redux';
 import {routerReducer} from 'react-router-redux';
 
 //这里需要引入所有的reducer
-
+import doReducer from './do/reducer';
 
 // 聚合各 reducer
 const rootReducer = combineReducers({
     // 将路由加入reducer
     routing: routerReducer,
-
+    doReducer
+    
 });
 
 

@@ -19,15 +19,23 @@ export default function configureStore(initialState, history) {
     //通过middleware创建stroe
     const createStoreWithMiddleware = compose(applyMiddleware(...middleware),  __DEV__ && typeof window === 'object' && typeof window.devToolsExtension !== 'undefined' ?
         window.devToolsExtension() : f => f,);
+
     let store = createStoreWithMiddleware(createStore)(rootReducer, initialState);
 
     // 热加载的配置
     if (process.env.NODE_ENV === 'development') {
         if (module.hot) {
-            module.hot.accept('../reducers', () => store.replaceReducer(require('../reducers').default));
+            try {
+                const nextReducer = require('../reducers').default;
+
+                store.replaceReducer(nextReducer);
+                alert()
+            } catch (error) {
+                console.error(chalk.red(`==> 😭  Reducer hot reloading error ${error}`));
+            }
         }
     }
 
-
     return store
+
 }

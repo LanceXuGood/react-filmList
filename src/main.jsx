@@ -46,7 +46,7 @@ if (module.hot) {
                 <Provider store={store}>
                     <ConnectedRouter history={history}>
                         <BrowserRouter >
-                            <Index/>
+                            <Index />
                         </BrowserRouter>
                     </ConnectedRouter>
                 </Provider>

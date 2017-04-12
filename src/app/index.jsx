@@ -6,7 +6,7 @@ import {
   Link
 } from 'react-router-dom';
 import Home from './components/Home';
-import Do from './components/Do';
+import DoList from './components/Do';
 import ToDo from './components/ToDo';
 class Index extends React.Component {
     constructor(props) {
@@ -17,14 +17,17 @@ class Index extends React.Component {
             <div className="base">
                 <ul className="nav">
                     <li><Link to="/">首页</Link></li>
-                    <li><Link to="/do">DoList</Link></li>
+                    <li><Link to="/dolist">DoList</Link></li>
                     <li><Link to="/todo">TodoList</Link></li>
                 </ul>
                 <Route exact path="/" component={Home}/>
-                <Route exact path="/do" component={Do}/>
+                <Route exact path="/dolist" component={DoList}/>
                 <Route exact path="/todo" component={ToDo}/>
             </div>
         )
     }
 }
+Index.contextTypes = {
+    router: React.PropTypes.object.isRequired
+};
 export default Index;
