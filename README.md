@@ -8,4 +8,4 @@ webpack2 + es6 + babel + eslint + react + react-router v4 + redux
     yarn 
 
 # 更改
-    * react-hot-loader 热加载的方式更改
+    * react-hot-loader 热加载的方式更改('extract-text-webpack-plugin//这个插  件不支持热加载，所以开发环境不支持)
