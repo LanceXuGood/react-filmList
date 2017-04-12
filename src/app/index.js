@@ -6,7 +6,7 @@ const { Header, Content, Sider } = Layout;
 import './index.scss';
 class Index extends React.Component{
     constructor(props){
-        super(props)
+        super(props);
     }
     render(){
         return(

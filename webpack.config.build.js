@@ -24,7 +24,6 @@ module.exports = {
         vendor: vendor,
         app: ['babel-polyfill', path.resolve(__dirname, 'src/main.js')]
     },
-    devtool: 'cheap-module-eval-source-map',
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: '[name].js',
