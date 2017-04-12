@@ -5,8 +5,9 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import Home from './components/home';
-
+import Home from './components/Home';
+import Do from './components/Do';
+import ToDo from './components/ToDo';
 class Index extends React.Component {
     constructor(props) {
         super(props);
@@ -16,10 +17,12 @@ class Index extends React.Component {
             <div className="base">
                 <ul className="nav">
                     <li><Link to="/">首页</Link></li>
-                    <li><Link to="/about">关于</Link></li>
-                    <li><Link to="/topics">主题列表</Link></li>
+                    <li><Link to="/do">DoList</Link></li>
+                    <li><Link to="/todo">TodoList</Link></li>
                 </ul>
                 <Route exact path="/" component={Home}/>
+                <Route exact path="/do" component={Do}/>
+                <Route exact path="/todo" component={ToDo}/>
             </div>
         )
     }
