@@ -1,11 +1,11 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 
 const ENV = process.env.NODE_ENV = process.env.ENV = 'development';
 const isDev = ENV !== 'production';
-console.log(isDev)
+console.log(isDev);
 const vendor = [
     'react',
     'react-dom',
@@ -27,7 +27,6 @@ module.exports = {
         publicPath: ''
     },
     resolve: {
-        modulesDirectories:['node_modules', path.join(__dirname, './node_modules')],
         extensions: ['.web.js', '.js', '.json']
     },
     module: {
@@ -65,51 +64,47 @@ module.exports = {
             },
             {
                 test: /\.scss/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                importLoaders: 1,
-                            }
-                        },
-                        {
-                            loader: 'postcss-loader',
-                            options: {
-                                sourceMap: 'inline',
-                            }
-                        },
-                        'sass-loader',
-                    ]
-                }),
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1,
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            sourceMap: 'inline',
+                        }
+                    },
+                    'sass-loader',
+                ],
                 exclude: /node_modules/
             },
             {
                 test: /\.less/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                importLoaders: 1,
-                            }
-                        },
-                        {
-                            loader: 'postcss-loader',
-                            options: {
-                                sourceMap: 'inline',
-                            }
-                        },
-                        'less-loader',
-                    ]
-                }),
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1,
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            sourceMap: 'inline',
+                        }
+                    },
+                    'less-loader',
+                ],
                 exclude: /node_modules/
             },
             {
                 test: /\.css/,
-                use: ExtractTextPlugin.extract([
+                use: [
                     'style-loader',
                     {
                         loader: 'css-loader',
@@ -123,18 +118,18 @@ module.exports = {
                             sourceMap: 'inline',
                         }
                     }
-                ]),
+                ]
             }
         ]
     },
     context: __dirname,
     plugins: [
-         new ExtractTextPlugin({
-            filename: '[name].[hash:8].css',
-            allChunks: true,
-            disable: !isDev,   // Disable css extracting on development
-            ignoreOrder: true,
-        }),
+        //  new ExtractTextPlugin({
+        //     filename: '[name].[hash:8].css',
+        //     allChunks: true,
+        //     disable: !isDev,   // Disable css extracting on development
+        //     ignoreOrder: true,
+        // }),
         new webpack.optimize.CommonsChunkPlugin({name: 'vendor', minChunks: Infinity}),
         new HtmlWebpackPlugin({
             title: '',

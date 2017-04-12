@@ -8,7 +8,7 @@ export default class Home extends React.Component{
     render(){
         return(
             <div>
-                123
+                1234
             </div>
         )
     }

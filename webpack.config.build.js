@@ -4,7 +4,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');//这个插件不支持热加载，所以开发环境不支持
 const ENV = process.env.NODE_ENV = process.env.ENV = 'development';
 const isDev = ENV !== 'production';
 
