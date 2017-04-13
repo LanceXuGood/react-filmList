@@ -27,7 +27,5 @@ class Index extends React.Component {
         )
     }
 }
-Index.contextTypes = {
-    router: React.PropTypes.object.isRequired
-};
+
 export default Index;
