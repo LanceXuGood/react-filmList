@@ -1,7 +1,7 @@
 import {ADD_TODO} from './action';
 
 const initialState = {
-    doList: [1],
+    doList: [],
 };
 export default function doReducer (state = initialState,action){
     switch (action.type) {

@@ -5,8 +5,6 @@ import {createStore,compose,applyMiddleware} from 'redux';
 import rootReducer from '../reducers';
 import {routerMiddleware} from 'react-router-redux';
 
-//这里可以引入各种中间件来强化redux
-
 /**
  *
  * @param initialState 初始状态值
