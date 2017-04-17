@@ -22,19 +22,23 @@ export default class Do extends Component {
         super(props);
     }
     state={
-        list:[4]
+        list:[1]
     }
 
-    handleClick=()=>{
+    handleClick=()=> {
+        //alert(this.props.doReducer.doList)
         this.props.actions.addTodo([1,2,3,4]);
-        setTimeout(()=>{
-            console.log(this.props)
-        },2000)
+        
+       // setTimeout(()=>{console.log(this.props)},2000)
     };
     componentDidMount() {
-
+        console.log('1',this.props)
     }
-
+    componentWillReceiveProps(nextProps) {
+        this.setState({
+            list:nextProps.doReducer.doList
+        })
+    }
     render() {
         const list = this.state.list;
         return (

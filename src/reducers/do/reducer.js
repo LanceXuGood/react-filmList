@@ -6,8 +6,8 @@ const initialState = {
 export default function doReducer (state = initialState,action){
     switch (action.type) {
         case ADD_TODO:
-            state.doList = action.text;
-            return  state
+            console.log(Object.assign({}, state, { doList:action.text }))
+            return Object.assign({}, state, { doList:action.text })
         default:
             return state;
     }

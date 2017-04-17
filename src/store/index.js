@@ -27,7 +27,6 @@ export default function configureStore(initialState, history) {
         if (module.hot) {
             try {
                 const nextReducer = require('../reducers').default;
-
                 store.replaceReducer(nextReducer);
             } catch (error) {
                 console.error(chalk.red(`==> 😭  Reducer hot reloading error ${error}`));
