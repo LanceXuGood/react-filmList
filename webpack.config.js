@@ -20,7 +20,7 @@ const vendor = [
 module.exports = {
     entry : ['react-hot-loader/patch', 'webpack/hot/only-dev-server', 'webpack-dev-server/client?http://localhost:3000', 'babel-polyfill', path.resolve(__dirname, 'src/main.jsx')]
     ,
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'source-map',
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: '[name].js',

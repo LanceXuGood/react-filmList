@@ -134,7 +134,7 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({name: 'vendor', minChunks: Infinity}),
         new webpack.HashedModuleIdsPlugin(),
         new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
+            sourceMap: false,
             beautify: false,
             mangle: {screw_ie8: true},
             compress: {

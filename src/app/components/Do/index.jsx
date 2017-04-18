@@ -22,7 +22,7 @@ export default class Do extends Component {
         super(props);
     }
     state={
-        list:[1]
+        list:['点击我啊']
     }
 
     handleClick=()=> {
