@@ -12,7 +12,7 @@ webpack2 + es6 + babel + eslint + react + react-router v4 + redux
     npm start
 # 更改
     * react-hot-loader 热加载的方式更改('extract-text-webpack-plugin//这个插  件不支持热加载，所以开发环境不支持)
-    * action 
-        1.action-thunk
-        2.action-promise
-        3.action-promise-middleware
+    * action 的异步选择方案
+        1.action-thunk (繁琐)
+        2.action-promise (太简化)
+        3.action-promise-middleware ...不知道怎么评论
