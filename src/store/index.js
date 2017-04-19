@@ -20,8 +20,6 @@ export default function configureStore(initialState, history) {
         routerMiddleware(history),
         //thunkMiddleware,
         promiseMiddleware,
-
-
         loggerMiddleware
         
     ];

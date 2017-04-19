@@ -1,15 +1,7 @@
 /.idea
 /node_modules
-/dest
-/prototype
-/js/hmc/views/test.js
-.DS_Store
 build/**
 /build
-record
-record/**
 **/*.log
 *.log
-.happypack
-npm-debug.log
 
