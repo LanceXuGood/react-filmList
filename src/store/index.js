@@ -1,9 +1,12 @@
-/*这里需要说明，这里创建store*/
-
-//中间件的绑定
 import {createStore,compose,applyMiddleware} from 'redux';
 import rootReducer from '../reducers';
+
+//中间件的绑定
 import {routerMiddleware} from 'react-router-redux';
+import thunkMiddleware from 'redux-thunk';
+import loggerMiddleware from 'redux-logger';
+import promiseMiddleware from 'redux-promise';
+
 
 /**
  *
@@ -14,7 +17,13 @@ import {routerMiddleware} from 'react-router-redux';
 export default function configureStore(initialState, history) {
     let middleware = [
         // 路由中间件
-        routerMiddleware(history)
+        routerMiddleware(history),
+        //thunkMiddleware,
+        promiseMiddleware,
+
+
+        loggerMiddleware
+        
     ];
     //通过middleware创建stroe
     const createStoreWithMiddleware = compose(applyMiddleware(...middleware),  __DEV__ && typeof window === 'object' && typeof window.devToolsExtension !== 'undefined' ?

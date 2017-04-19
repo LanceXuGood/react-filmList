@@ -1,13 +1,27 @@
-import {ADD_TODO} from './action';
-
+//redux-thunk 中间件
 const initialState = {
     doList: [],
 };
-export default function doReducer (state = initialState,action){
+
+// export default function doReducer (state = initialState,action){
+//     switch (action.type) {
+//         case 'ADD_TODO_SUCCESS':
+//             return Object.assign({}, state, { doList:action.payload.data });
+//         default:
+//             return state;
+//     }
+// }
+
+//redux-promise中间件
+
+export default function doReducer(state = initialState, action) {
     switch (action.type) {
-        case ADD_TODO:
-            console.log(Object.assign({}, state, { doList:action.text }))
-            return Object.assign({}, state, { doList:action.text })
+        case 'ADD_TODO':
+            if (action.payload.status === 200) {
+                return Object.assign({}, state, {
+                    doList: action.payload.data.data
+                });
+            }
         default:
             return state;
     }

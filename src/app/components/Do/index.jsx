@@ -26,13 +26,10 @@ export default class Do extends Component {
     }
 
     handleClick=()=> {
-        //alert(this.props.doReducer.doList)
-        this.props.actions.addTodo([1,2,3,4]);
-        
-       // setTimeout(()=>{console.log(this.props)},2000)
+        this.props.actions.addTodo();
     };
     componentDidMount() {
-        console.log('1',this.props)
+        
     }
     componentWillReceiveProps(nextProps) {
         this.setState({
@@ -41,9 +38,10 @@ export default class Do extends Component {
     }
     render() {
         const list = this.state.list;
+    
         return (
             <div>
-               {list.map( (item,index)=><div onClick={this.handleClick} key={index}>{item}</div> )}
+               {list.map( (item,index)=><div onClick={this.handleClick} key={index}>{item.brandName?item.brandName:item}</div> )}
             </div>
         );
     }
