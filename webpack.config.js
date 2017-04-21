@@ -32,6 +32,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file-loader'
+            },
+            {
                 test: /\.jpe?g$|\.gif$|\.png$/i,
                 use: [
                     {
@@ -55,7 +59,7 @@ module.exports = {
                                 'react-hot-loader/babel',
                                 'transform-decorators-legacy',
                                 'transform-class-properties',
-                                //['import', {'libraryName': 'antd', 'style': 'css'}]
+                                ['import', {'libraryName': 'antd', 'style': 'css'}]
                             ]
                         }
                     },
