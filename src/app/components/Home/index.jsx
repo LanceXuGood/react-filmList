@@ -1,10 +1,10 @@
 import React from 'react';
 import { Breadcrumb } from 'antd';
-import './index.scss'
+import './index.scss';
 
 export default class Home extends React.Component{
     constructor(props){
-        super(props)
+        super(props);
     }
     render(){
         return(

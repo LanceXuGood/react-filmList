@@ -17,7 +17,7 @@ import {bindActionCreators} from 'redux';
         },dispatch)
     })
 )
-export default class Do extends Component {
+export default class DoList extends Component {
     constructor(props){
         super(props);
     }

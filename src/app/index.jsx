@@ -6,7 +6,7 @@ import {
   Link
 } from 'react-router-dom';
 import Home from './components/Home';
-import DoList from './components/Do';
+import DoList from './components/DoList';
 import ToDo from './components/ToDo';
 class Index extends React.Component {
     constructor(props) {
