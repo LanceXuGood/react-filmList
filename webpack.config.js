@@ -18,7 +18,7 @@ const vendor = [
 ];
 
 module.exports = {
-    entry : ['react-hot-loader/patch', 'webpack/hot/only-dev-server', 'webpack-dev-server/client?http://localhost:3000', 'babel-polyfill', path.resolve(__dirname, 'src/main.jsx')]
+    entry : ['react-hot-loader/patch', 'webpack/hot/only-dev-server', 'webpack-dev-server/client?http://localhost:8000', 'babel-polyfill', path.resolve(__dirname, 'src/main.jsx')]
     ,
     devtool: 'source-map',
     output: {
