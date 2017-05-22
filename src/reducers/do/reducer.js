@@ -17,7 +17,7 @@ const initialState = {
 export default function doReducer(state = initialState, action) {
     switch (action.type) {
         case 'ADD_TODO':
-            if (action.payload.status === 200) {
+            if (action.payload.errCode == 0) {
                 return Object.assign({}, state, {
                     doList: action.payload.data.data
                 });

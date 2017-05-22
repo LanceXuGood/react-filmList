@@ -1,5 +1,5 @@
-import axios from 'axios';
 
+import {getList} from '../../common/api';
 //thunk //定义type
 // export const ADD_TODO = 'ADD_TODO';
 // export const ADD_TODO_SUCCESS = 'ADD_TODO_SUCCESS';
@@ -26,9 +26,9 @@ import axios from 'axios';
 export const ADD_TODO = 'ADD_TODO';
 
 //action创建函数
-export function addTodo() {
+export function addTodo(params) {
     return {
         type: ADD_TODO,
-        payload: axios.get('http://api-dev.haomaiche.com/ware/car/hot-car/310000?cityCode=310000&pageSize=6&source=102&time=1492497682717')//payload为promise对象
-    }
+        payload: getList(params)//payload为promise对象
+    };
 }

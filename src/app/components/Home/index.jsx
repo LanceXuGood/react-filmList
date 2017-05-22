@@ -1,5 +1,6 @@
 import React from 'react';
-import { Breadcrumb } from 'antd';
+import { Calendar } from 'antd';
+
 import './index.scss';
 
 export default class Home extends React.Component{
@@ -8,12 +9,7 @@ export default class Home extends React.Component{
     }
     render(){
         return(
-            <Breadcrumb className="home-nav">
-                <Breadcrumb.Item>首页</Breadcrumb.Item>
-                <Breadcrumb.Item>新闻</Breadcrumb.Item>
-                <Breadcrumb.Item>商城</Breadcrumb.Item>
-                <Breadcrumb.Item>个人</Breadcrumb.Item>
-            </Breadcrumb>
+            <Calendar />
         )
     }
 }
