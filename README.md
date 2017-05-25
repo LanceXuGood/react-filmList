@@ -16,3 +16,5 @@ webpack2 + es6 + babel + eslint + react + react-router v4 + redux
         1.action-thunk (繁琐)
         2.action-promise (太简化)
         3.action-promise-middleware ...不知道怎么评论
+    * 2017-05-25
+        实现axios请求拦截器
