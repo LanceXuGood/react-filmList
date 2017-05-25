@@ -20,7 +20,6 @@ instance.interceptors.request.use(function (opts) {
         params,
         data
     } = opts;
-
     // 原始参数
     opts.origin = {
         ...(_.isPlainObject(params) ? params : {}),
@@ -28,7 +27,7 @@ instance.interceptors.request.use(function (opts) {
     };
 
     // params将转换到url中的替换
-
+   
     if (opts.params) {
 
         // 处理排序
@@ -39,9 +38,10 @@ instance.interceptors.request.use(function (opts) {
             delete opts.params.sort;
             delete opts.params.order;
         }
-
+                
         // 转换URL的参数,需要自动删除没有的参数
         opts.url = transforms(opts.url, opts.params);
+     
     }
 
     opts.params = opts.params || {};

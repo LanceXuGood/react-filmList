@@ -27,7 +27,7 @@ export default class DoList extends Component {
         isLoading: true,
     }
     componentDidMount() {
-        // cityCode=310000&pageSize=8&source=102&time=149249768271
+        // cpageSize=8&source=102&time=149249768271
         this.props.actions.addTodo({
             cityCode: 310000,
             pageSize: 20

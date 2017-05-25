@@ -8,8 +8,9 @@
 export function transforms(url, params) {
 
     let variables = [];
+   
     url = expand(url, params, variables);
-
+     console.log(url)
     variables.forEach((key) => {
         delete params[key];
     });
