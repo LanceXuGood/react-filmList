@@ -10,7 +10,7 @@ import { bindActionCreators } from 'redux';
 //链接redux ，这块地方还有有些模糊
 @connect(
     state => ({
-        doReducer: state.doReducer
+        doReducer: state.doReducer.toJS() // 数据格式从immutable转换成js数据类型
     }),
     dispatch => ({
         actions: bindActionCreators({
@@ -26,20 +26,20 @@ export default class DoList extends Component {
         list: [],
         isLoading: true,
     }
-    componentDidMount() {
+    componentDidMount=()=> {
         // cpageSize=8&source=102&time=149249768271
         this.props.actions.addTodo({
             cityCode: 310000,
             pageSize: 20
         });
     }
-    componentWillReceiveProps(nextProps) {
+    componentWillReceiveProps=(nextProps)=> {
         this.setState({
             list: nextProps.doReducer.doList,
             isLoading: false
         });
     }
-    render() {
+    render=()=>{
         const columns = [{
             title: '品牌',
             dataIndex: 'brandName',
@@ -74,10 +74,10 @@ export default class DoList extends Component {
         const dataSource = this.state.list;
         return (
             <div>
-                <Table dataSource={dataSource} 
-                    columns={columns} 
-                    rowKey={record => record.typeId} 
-                    loading={this.state.isLoading} 
+                <Table dataSource={dataSource}
+                    columns={columns}
+                    rowKey={record => record.typeId}
+                    loading={this.state.isLoading}
                     pagination={{ pageSize: 5 }}/>
             </div>
         );

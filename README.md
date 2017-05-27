@@ -12,6 +12,7 @@ webpack2 + es6 + babel + eslint + react + react-router v4 + redux
     npm start
 # 更改
     * 现在还处在开发阶段，具体想要做什么还没想法， 暂时只是一些假数据。 
+    * 还是很感谢之前的老大，在之前老大那边学到很多东西！！！
     * react-hot-loader 热加载的方式更改('extract-text-webpack-plugin//这个插  件不支持热加载，所以开发环境不支持)
     * action 的异步选择方案
         1.action-thunk (繁琐)
