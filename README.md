@@ -1,5 +1,5 @@
 
-# react-xy react全家桶搭建
+# react-redux-xy react全家桶搭建
 webpack2 + es6 + babel + eslint + react + react-router v4 + redux 
 
 # 启动 运行
@@ -18,3 +18,6 @@ webpack2 + es6 + babel + eslint + react + react-router v4 + redux
         实现axios请求拦截器（参照之前的项目，了解学习的）
     * 2017-05-27
         加入immutable.js进行状态管理
+
+# ToDoList
+    *  拦截器中对于get请求，对参数进行统一格式化
