@@ -27,7 +27,7 @@ instance.interceptors.request.use(function (opts) {
     };
 
     // params将转换到url中的替换
-   
+
     if (opts.params) {
 
         // 处理排序
@@ -38,10 +38,10 @@ instance.interceptors.request.use(function (opts) {
             delete opts.params.sort;
             delete opts.params.order;
         }
-                
+
         // 转换URL的参数,需要自动删除没有的参数
         opts.url = transforms(opts.url, opts.params);
-     
+
     }
 
     opts.params = opts.params || {};
@@ -107,7 +107,7 @@ const Http = {
 
             // /buy/logout => http://api.dev.vveshow.com/buy/logout
             if (!opts.baseURL && /^\//.test(opts.url)) {
-                opts.url = 'http://api-dev.haomaiche.com' + opts.url;
+                opts.url = 'http://api-stage.haomaiche.com' + opts.url;
             }
             // TODO:
             // buy/manager/product/list =>  http://api.dev.vveshow.com/buy/api/v1/{client}/{channel}/manager/product/list
