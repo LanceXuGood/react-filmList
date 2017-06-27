@@ -17,7 +17,7 @@
     "plugin:react/recommended"
 ],
     "globals": {
-    "_": true,
+        "_": true,
         "React": true,
         "classnames": true
 },

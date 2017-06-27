@@ -1,8 +1,5 @@
 //2017/5/27 添加emmtable.js
 import {
-    createReducer
-} from 'redux-immutable';
-import {
     fromJS
 } from 'immutable';
 import {

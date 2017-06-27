@@ -3,7 +3,7 @@ import rootReducer from '../reducers';
 
 //中间件的绑定
 import {routerMiddleware} from 'react-router-redux';
-import thunkMiddleware from 'redux-thunk';
+//import thunkMiddleware from 'redux-thunk';
 import loggerMiddleware from 'redux-logger';
 import promiseMiddleware from 'redux-promise';
 
@@ -21,7 +21,7 @@ export default function configureStore(initialState, history) {
         //thunkMiddleware,
         promiseMiddleware,
         loggerMiddleware
-        
+
     ];
     //通过middleware创建stroe
     const createStoreWithMiddleware = compose(applyMiddleware(...middleware),  __DEV__ && typeof window === 'object' && typeof window.devToolsExtension !== 'undefined' ?
