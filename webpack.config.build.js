@@ -6,6 +6,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');//这个插件不支持热加载，所以开发环境不支持
 const ENV = process.env.NODE_ENV = process.env.ENV = 'development';
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const isDev = ENV !== 'production';
 
 const vendor = [
@@ -22,15 +23,16 @@ const vendor = [
 module.exports = {
     entry : {
         vendor: vendor,
-        app: ['babel-polyfill', path.resolve(__dirname, 'src/main.js')]
+        app: ['babel-polyfill',  path.resolve(__dirname, 'src/main.jsx')]
     },
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: '[name].js',
+        filename: '[name]_[hash].js',
+        chunkFilename: '[name].[chunkhash:5].chunk.js',
         publicPath: ''
     },
     resolve: {
-        extensions: ['.web.js', '.js', '.json']
+        extensions: ['.web.js', '.js', '.jsx','.json']
     },
     module: {
         rules: [
@@ -131,7 +133,12 @@ module.exports = {
     },
     context: __dirname,
     plugins: [
+         new CleanWebpackPlugin(['build'], {
+            verbose: true,
+            dry: false
+        }),
         new webpack.optimize.CommonsChunkPlugin({name: 'vendor', minChunks: Infinity}),
+        new webpack.optimize.ModuleConcatenationPlugin(),
         new webpack.HashedModuleIdsPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             sourceMap: false,
@@ -143,7 +150,7 @@ module.exports = {
                 unused: true,
                 dead_code: true,
             },
-            output: {screw_ie8: true, comments: false},
+            output: {screw_ie8: false, comments: false},
         }),
         new ExtractTextPlugin({
             filename: '[name].[hash:8].css',

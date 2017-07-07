@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import es6Promise from 'es6-promise';
-import Index from './app';
+import Index from './app/index.jsx';
 import { BrowserRouter } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 //绑定react与redux；
