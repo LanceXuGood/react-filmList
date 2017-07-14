@@ -133,7 +133,7 @@ module.exports = {
     },
     context: __dirname,
     plugins: [
-         new CleanWebpackPlugin(['build'], {
+        new CleanWebpackPlugin(['build'], {
             verbose: true,
             dry: false
         }),
