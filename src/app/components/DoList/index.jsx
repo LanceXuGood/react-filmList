@@ -28,6 +28,7 @@ export default class DoList extends Component {
     }
     componentDidMount=()=> {
         // cpageSize=8&source=102&time=149249768271
+        console.log(111111111,this.props)
         this.props.actions.addTodo({
             cityCode: 310000,
             pageSize: 20

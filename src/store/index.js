@@ -7,7 +7,6 @@ import {routerMiddleware} from 'react-router-redux';
 import loggerMiddleware from 'redux-logger';
 import promiseMiddleware from 'redux-promise';
 
-
 /**
  *
  * @param initialState 初始状态值
@@ -36,7 +35,7 @@ export default function configureStore(initialState, history) {
                 const nextReducer = require('../reducers').default;
                 store.replaceReducer(nextReducer);
             } catch (error) {
-                console.error(chalk.red(`==> 😭  Reducer hot reloading error ${error}`));
+                console.error(chalk.red(`==> 😭Reducer hot reloading error ${error}`));
             }
         }
     }
