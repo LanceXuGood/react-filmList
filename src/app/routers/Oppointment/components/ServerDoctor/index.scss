@@ -1,0 +1,46 @@
+@import '../../../../../assets/style/vaiable.scss';
+.server_doctor {
+  .server_doctor-content {
+    padding-bottom: 0.6119rem;
+    .doctor_list {
+      padding: 0.6119rem 0.3462rem;
+      padding-bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .doctor_list-item {
+        margin-bottom: 0.161rem;
+        .head_portrait {
+          width: 2.19rem;
+          height: 2.19rem;
+          background: #d2d2d2;
+          position: relative;
+          border-radius: 50%;
+          >span {
+            position: absolute;
+            width: 0.2818rem;
+            height: 0.2818rem;
+            background-color: #f3f3f3;
+            border: solid 3px #c9c9c9;
+            right: 0;
+            bottom: 0;
+          }
+          margin-bottom: 0.4589rem;
+        }
+        .doctor_name {
+          @include p_common;
+          @include font-dpr(16px);
+          text-align: center;
+          color: $color-text-secondary;
+          margin-bottom: 0.2093rem;
+        }
+        .doctor_professional-title {
+          @include p_common;
+          @include font-dpr(14px);
+          text-align: center;
+          color: #959595;
+        }
+      }
+    }
+  }
+}

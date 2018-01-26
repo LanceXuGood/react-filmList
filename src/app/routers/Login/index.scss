@@ -1,0 +1,110 @@
+@import '../../../assets/style/vaiable.scss';
+.login_com {
+  .login_com-title {
+    @include font-dpr(16px);
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0.153rem;
+    color: $brand-primary;
+    text-align: center;
+    margin-bottom: 0.5072rem;
+  }
+  .login_com-client {
+    @include font-dpr(12px);
+    letter-spacing: 0.0403rem;
+    color: $brand-primary;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.9179rem;
+    div {
+      padding: 0 0.5395rem;
+    }
+    p {
+      height: 3px;
+      background: $brand-primary;
+      flex: 1;
+    }
+  }
+  .lofgin_com-form {
+    >div {
+      border: solid 2px $color-text-base;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 0.4428rem;
+      color: $color-text-base;
+      letter-spacing: 2px;
+      height: 0.942rem;
+      span:nth-of-type(2) {
+        @include font-dpr(18px);
+        letter-spacing: 2px;
+        display: inline-block;
+        padding: 0 0.2738rem;
+      }
+      .username,
+      .password {
+        margin-right: 20px;
+        flex: 1;
+        padding-left: 0;
+      }
+    }
+    .am-list-item.am-input-item {
+      height: 100%;
+    }
+    .am-list-item {
+      min-height: 0;
+      .am-list-line {
+        padding-right: 0;
+      }
+    }
+    .am-list-item .am-input-control input {
+      @include font-dpr(18px);
+    }
+  }
+  .error-msg {
+    height: 1.0467rem;
+  }
+  .login {
+    margin-bottom: 0.2738rem;
+  }
+  .am-button-primary {
+    @include font-dpr(18px);
+    height: 0.9501rem;
+    line-height: 0.9501rem;
+  }
+  .tip {
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: $color-text-base;
+    }
+  }
+  .border {
+    width: 2.4557rem;
+    height: 0px;
+    border-bottom: solid 1px $color-text-base;
+    margin: 0 auto;
+    margin-top: 1.5781rem;
+    margin-bottom: 1.2399rem;
+  }
+  .text {
+    @include font-dpr(12px);
+    letter-spacing: 3px;
+    text-align: center;
+    color: $color-text-base;
+    margin-bottom: 1.1675rem;
+  }
+  .other-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      display: block;
+      width: 0.9259rem;
+      height: 0.9259rem;
+      border-radius: 50%;
+      background: greenyellow;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import './vaiable.scss';
+.am-list-item .am-list-line .am-list-arrow {
+  width: 0.2818rem;
+  height: 0.2415rem;
+}
+.am-icon-md {
+  width: 0.3543rem;
+  height: 0.3543rem;
+}
+.am-modal.am-modal-transparent{
+  width: 70%!important;
+}
+.am-modal-title{
+  @include font-dpr(16px);
+}
+.am-modal-alert-content{
+  @include font-dpr(14px);
+}
+.am-modal-button-group-h .am-modal-button{
+  @include font-dpr(16px);
+}
+
+.am-list-item{
+  padding-left: 0.3462rem;
+}
+.am-list-item .am-list-line .am-list-content{
+  @include font-dpr(18px);
+  color: $color-text-secondary;
+}
+.am-list-item .am-list-line .am-list-extra{
+  @include font-dpr(18px);
+}

@@ -1,0 +1,66 @@
+@import '../../../../../assets/style/vaiable.scss';
+.server_type {
+  .time_list {
+    padding: 0.4589rem 0.3462rem;
+    height: 4.4283rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >div {
+      width: 1.562rem;
+      height: 1.562rem;
+      border-radius: 50%;
+      border: solid 2px #dcdcdc;
+      &.active {
+        background-color: $brand-primary;
+      }
+    }
+  }
+  .project_list {
+    .am-list-item {
+      padding-left: 0.3623rem;
+    }
+  }
+  .project_list-item {
+    .am-list-content {
+      padding-top: 0.4187rem;
+      padding-bottom: 0.4187rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .img {
+      width: 1.7552rem;
+      height: 1.7552rem;
+      background: #d2d2d2;
+
+    }
+    .project_info {
+      width: 40%;
+      h3 {
+        @include font-dpr(16px);
+        line-height: 0.5797rem;
+        letter-spacing: 2px;
+        color: $color-text-secondary;
+      }
+      div {
+        @include font-dpr(14px);
+        line-height: 0.5797rem;
+        letter-spacing: 2px;
+        color: #959595;
+      }
+      p {
+        @include font-dpr(16px);
+        line-height: 0.5797rem;
+        letter-spacing: 2px;
+        font-size: 48px;
+        color: $brand-primary;
+      }
+    }
+    .project_info-link {
+      @include font-dpr(16px);
+      @include p_common;
+      color: $brand-primary;
+    }
+  }
+}

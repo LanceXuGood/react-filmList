@@ -1,0 +1,61 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "globals": {
+        "_": true,
+        "React": true,
+        "classnames": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 7,
+        "ecmaFeatures": {
+            "globalReturn": true,
+            "impliedStrict": true,
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        }
+    },
+    "rules": {
+        "strict": "error",
+        "indent": [
+            "warn",
+            2,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "no-extra-semi": "warn",
+        "semi": [
+            "warn",
+            "always"
+        ],
+        "no-console": "warn",
+        "no-alert": "warn",
+        "no-case-declarations": "off",
+        "react/prop-types": "off",
+        "react/display-name": "off",
+        "react/require-render-return": "error",
+        "react/no-unknown-property": "error",
+        "react/no-direct-mutation-state": "error",
+        "react/no-danger": "off",
+        "no-class-assign": "off",
+        "no-constant-condition": "off"
+
+    }
+}

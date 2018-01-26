@@ -1,0 +1,18 @@
+@mixin font-dpr($font-size) {
+  font-size: $font-size;
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+}
+
+@mixin p_common {
+  letter-spacing: 2px;
+}
+
+$brand-primary: #40c970;
+$color-text-base: #a0a0a0;
+$color-text-secondary: #626262;
+

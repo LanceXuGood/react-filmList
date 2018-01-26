@@ -1,0 +1,92 @@
+@import '../../../../../assets/style/vaiable.scss';
+.oppointment_content {
+  .oppointment_time {
+    .am-list-body {
+      .am-list-item-middle {
+        height: 1.5137rem;
+        padding-left: 0.3462rem;
+      }
+      .am-list-item .am-list-line .am-list-extra {
+        flex-basis: 50%;
+      }
+      .am-list-extra {
+        color: $color-text-secondary;
+        @include font-dpr(16px);
+      }
+      .time-title {
+        color: $color-text-secondary;
+        @include font-dpr(16px);
+      }
+    }
+  }
+  .remark {
+    padding: 0.4831rem 0.3462rem;
+    padding-bottom: 0;
+    h5 {
+      @include font-dpr(16px);
+      letter-spacing: 2px;
+      color: $color-text-secondary;
+      margin-bottom: 0.306rem;
+    }
+    .am-list-item {
+      padding-left: 0;
+      background-color: #f3f3f3;
+      border: solid 2px #d2d2d2;
+    }
+    .am-textarea-control textarea {
+      padding-left: 32px;
+      padding-right: 32px;
+      @include font-dpr(16px);
+    }
+  }
+}
+
+.oppointment_content_time_list {
+  .time_list-title {
+    padding: 0 0.3462rem;
+    height: 1.3688rem;
+    border-bottom: 2px solid #d2d2d2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d2d2d2;
+    >div {
+      @include font-dpr(19px);
+      line-height: 72px;
+      letter-spacing: 2px;
+      color: $color-text-secondary;
+    }
+  }
+  .time_list-content {
+    padding: 0.5072rem 0.3462rem;
+    height: 9.6457rem;
+    overflow-y: auto;
+    .time_list-content-item {
+      >h3 {
+        @include font-dpr(19px);
+        text-align: left;
+        letter-spacing: 2px;
+        color: $color-text-secondary;
+        margin-bottom: 0.2657rem;
+      }
+      .Grid_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        p {
+          @include font-dpr(18px);
+          letter-spacing: 2px;
+          color: $brand-primary;
+        }
+        div>span {
+          @include font-dpr(16px);
+          letter-spacing: 2px;
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+}

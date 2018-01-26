@@ -1,0 +1,30 @@
+.clearfix() {
+	&:before,
+	&:after {
+		content: " "; // 1
+		display: table; // 2
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// &:extend(.clearfix all);
+.clearfix {
+	.clearfix();
+}
+
+.text-truncate() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// 主色
+@primary-color: #009dfc;
+
+//成功
+@success-color: #87d068;
+
+//失败
+@error-color: #f50;

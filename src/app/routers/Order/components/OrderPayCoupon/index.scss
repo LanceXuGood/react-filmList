@@ -1,0 +1,50 @@
+@import '../../../../../assets/style/vaiable.scss';
+.order_pay-coupon {
+  .order_pay-couponListItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.475rem 0.3382rem;
+    border-bottom: 2px solid #d2d2d2;
+    >div:nth-of-type(1) {
+      >p {
+        @include font-dpr(18px);
+        color: $color-text-secondary;
+        &:nth-of-type(1) {
+          margin-bottom: 0.4187rem;
+        }
+      }
+    }
+    >div:nth-of-type(2) {
+      span {
+        display: inline-block;
+        width: 0.2818rem;
+        height: 0.2818rem;
+        border-radius: 50%;
+        background-color: #f3f3f3;
+        border: solid 2PX #c9c9c9;
+      }
+      b {
+        @include font-dpr(18px);
+        letter-spacing: 2px;
+        color: #ff4e00;
+      }
+    }
+  }
+  .order_pay-couponTip {
+    background: $brand-primary;
+    line-height: 0.942rem;
+    padding-left: 0.3382rem;
+    @include font-dpr(18px);
+    height: 0.942rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+
+}
+.no_coupon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

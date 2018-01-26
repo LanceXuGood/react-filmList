@@ -1,0 +1,56 @@
+@import '../../../../../assets/style/vaiable.scss';
+.order_preview {
+  padding-bottom: 0.942rem;
+  .order_list-item {
+    padding: 0.4589rem 0.3462rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d2d2d2;
+    @include font-dpr(18px);
+    &.remark-item {
+      display: block;
+      .right {
+        display: block;
+        margin-top: 0.3623rem;
+        text-align: left;
+      }
+    }
+    .right {
+      color: $color-text-base;
+      text-align: right;
+    }
+    .left {
+      color: $color-text-secondary;
+    }
+    .address {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      span {
+        line-height: 0.5797rem;
+      }
+    }
+    .number_price {
+      display: flex;
+      span:nth-of-type(1) {
+        margin-right: 1.2882rem;
+      }
+    }
+    .preferential{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .gr-list{
+
+  }
+  .order_tip{
+    margin-top:0.3221rem;
+    margin-bottom: 1.0709rem;
+    padding-left: 0.3462rem;
+    @include font-dpr(0.1127rem);
+	  color: #ff4e00;
+  }
+
+}
