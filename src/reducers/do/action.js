@@ -1,5 +1,5 @@
 
-import {getList} from '../../common/api';
+import {getDouBanFilmList} from '../../common/api';
 
 //定义type
 export const ADD_TODO = 'ADD_TODO';
@@ -8,6 +8,6 @@ export const ADD_TODO = 'ADD_TODO';
 export function addTodo(params) {
   return {
     type: ADD_TODO,
-    payload: getList(params)//payload为promise对象
+    payload: getDouBanFilmList(params)//payload为promise对象
   };
 }

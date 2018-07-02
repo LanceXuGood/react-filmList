@@ -44,6 +44,7 @@ module.exports = {
             plugins: [
               'react-hot-loader/babel',
               'transform-decorators-legacy',
+              'syntax-dynamic-import',
               'transform-class-properties', ['import', {
                 libraryName: 'antd-mobile',
                 style: true
