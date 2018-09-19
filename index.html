@@ -1,150 +1,95 @@
 <!DOCTYPE html>
-<html lang="en" data-scale="true">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <meta name="theme-color" content="#000000">
-  <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  <title>影片</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    .init-loading-warpper {
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999999
+    }
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <title>死侍</title>
-  <script>
-    ;
-    (function (win, lib) {
-        var doc = win.document;
-        var docEl = doc.documentElement;
-        var metaEl = doc.querySelector('meta[name="viewport"]');
-        var flexibleEl = doc.querySelector('meta[name="flexible"]');
-        var dpr = 0;
-        var scale = 0;
-        var tid;
-        var flexible = lib.flexible || (lib.flexible = {});
+    .init-loading-warpper .loading {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      margin-left: 10%;
+      transform: translate3d(-50%, -50%, 0);
+    }
 
-        if (metaEl) {
-            console.warn('将根据已有的meta标签来设置缩放比例');
-            var match = metaEl.getAttribute('content').match(/initial\-scale=([\d\.]+)/);
-            if (match) {
-                scale = parseFloat(match[1]);
-                dpr = parseInt(1 / scale);
-            }
-        } else if (flexibleEl) {
-            var content = flexibleEl.getAttribute('content');
-            if (content) {
-                var initialDpr = content.match(/initial\-dpr=([\d\.]+)/);
-                var maximumDpr = content.match(/maximum\-dpr=([\d\.]+)/);
-                if (initialDpr) {
-                    dpr = parseFloat(initialDpr[1]);
-                    scale = parseFloat((1 / dpr).toFixed(2));
-                }
-                if (maximumDpr) {
-                    dpr = parseFloat(maximumDpr[1]);
-                    scale = parseFloat((1 / dpr).toFixed(2));
-                }
-            }
-        }
+    .init-loading-warpper .dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 100%;
+      display: inline-block;
+      animation: slide 1.2s infinite;
+    }
 
-        if (!dpr && !scale) {
-            var isAndroid = win.navigator.appVersion.match(/android/gi);
-            var isIPhone = win.navigator.appVersion.match(/iphone/gi);
-            var devicePixelRatio = win.devicePixelRatio;
-            if (isIPhone) {
-                // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
-                if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
-                    dpr = 3;
-                } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
-                    dpr = 2;
-                } else {
-                    dpr = 1;
-                }
-            } else {
-                // 其他设备下，仍旧使用1倍的方案
-                dpr = 1;
-            }
-            scale = 1 / dpr;
-        }
+    .init-loading-warpper .dot:nth-of-type(1) {
+      animation-delay: 0.1s;
+      background: #4f946e;
+    }
 
-        docEl.setAttribute('data-dpr', dpr);
-        if (!metaEl) {
-            metaEl = doc.createElement('meta');
-            metaEl.setAttribute('name', 'viewport');
-            metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale +
-                ', minimum-scale=' + scale + ', user-scalable=no');
-            if (docEl.firstElementChild) {
-                docEl.firstElementChild.appendChild(metaEl);
-            } else {
-                var wrap = doc.createElement('div');
-                wrap.appendChild(metaEl);
-                doc.write(wrap.innerHTML);
-            }
-        }
+    .init-loading-warpper .dot:nth-of-type(2) {
+      animation-delay: 0.2s;
+      background: #64aacc;
+    }
 
-        function refreshRem() {
-            var width = docEl.getBoundingClientRect().width;
-            if (width / dpr > 540) {
-                width = 540 * dpr;
-            }
-            var rem = width / 10;
-            docEl.style.fontSize = rem + 'px';
-            flexible.rem = win.rem = rem;
-        }
+    .init-loading-warpper .dot:nth-of-type(3) {
+      animation-delay: 0.3s;
+      background: #96aacc;
+    }
 
-        win.addEventListener('resize', function () {
-            clearTimeout(tid);
-            tid = setTimeout(refreshRem, 300);
-        }, false);
-        win.addEventListener('pageshow', function (e) {
-            if (e.persisted) {
-                clearTimeout(tid);
-                tid = setTimeout(refreshRem, 300);
-            }
-        }, false);
+    .init-loading-warpper .dot:nth-of-type(4) {
+      animation-delay: 0.4s;
+      background: #c8aacc;
+    }
 
-        if (doc.readyState === 'complete') {
-            doc.body.style.fontSize = 12 * dpr + 'px';
-        } else {
-            doc.addEventListener('DOMContentLoaded', function (e) {
-                doc.body.style.fontSize = 12 * dpr + 'px';
-            }, false);
-        }
+    .init-loading-warpper .dot:nth-of-type(5) {
+      animation-delay: 0.5s;
+      background: #faaacc;
+    }
 
+    @keyframes slide {
+      0% {
+        transform: scale(1);
+      }
 
-        refreshRem();
+      50% {
+        opacity: 0.3;
+        transform: scale(2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
 
-        flexible.dpr = win.dpr = dpr;
-        flexible.refreshRem = refreshRem;
-        flexible.rem2px = function (d) {
-            var val = parseFloat(d) * this.rem;
-            if (typeof d === 'string' && d.match(/rem$/)) {
-                val += 'px';
-            }
-            return val;
-        }
-        flexible.px2rem = function (d) {
-            var val = parseFloat(d) / this.rem;
-            if (typeof d === 'string' && d.match(/px$/)) {
-                val += 'rem';
-            }
-            return val;
-        }
+  </style>
 
-    })(window, window['lib'] || (window['lib'] = {}));
-
-</script>
-</head>
 
 <body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<div class="init-loading-warpper">
+  <div class="loading">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
 
-  <div id="app"></div>
+</div>
 
 </body>
 

@@ -46,6 +46,7 @@ ReactDOM.render(
   document.getElementById('app')
 );
 
+// 热加载配置
 if (module.hot) {
   module.hot.accept('./App.js', () => {
     const App = require('./App.js').default;

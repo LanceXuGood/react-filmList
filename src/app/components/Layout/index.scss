@@ -1,0 +1,40 @@
+@import '../../../assets/style/vaiable.scss';
+
+.layout {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  >.main{
+    position: relative;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 2;
+    flex: 1;
+  }
+  .dy-nav-wrapper {
+    position: relative;
+    z-index: 1;
+    height: 50px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px -1px 8px rgba(28, 84, 95, 0.24);
+    display: flex;
+    align-items: center
+  }
+  .dy-nav {
+    flex: 1;
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+    .iconfont{
+      font-size: 24px
+    }
+  }
+  .dy-nav.active{
+    color: $primary-color
+  }
+}

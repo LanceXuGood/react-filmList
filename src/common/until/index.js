@@ -5,5 +5,5 @@
  * @return {Boolean} nResult 返回结果 true或者false
  */
 export function exists(o, type) {
-    return o != undefined && o !== null && (type ? o.constructor == type : true);
+  return o != undefined && o !== null && (type ? o.constructor == type : true);
 }

@@ -4,9 +4,7 @@ class Title extends Component {
     super(props);
   }
   render() {
-    return <div>
-      '正在加载'
-    </div>;
+    return <div>正在加载</div>;
   }
 }
 

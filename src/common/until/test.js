@@ -1,5 +1,5 @@
-const test = () =>  {
-    console.log(2);
+const test = () => {
+  console.log(2);
 };
 
 export default test;

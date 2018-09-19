@@ -132,8 +132,8 @@ module.exports = {
     historyApiFallback: true,
     compress: true,
     proxy: {
-      '/api': {
-        target: 'http://192.168.1.28:3000/',
+      '/v2': {
+        target: 'https://api.douban.com/',
         secure: false,
         changeOrigin: true
       }

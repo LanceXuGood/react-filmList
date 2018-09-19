@@ -32,21 +32,22 @@ const AuthRouter = () => {
     <div>
       <Route exact path="/" render={() => (
         true ? (
-          <Redirect to="/app" />
+          <Redirect to="/app/home" />
         ) : (<Redirect to="/login" />)
       )} />
+      {/* Loadable 懒加载 */}
       <Route path="/app" component={Loadable({
         loader: () => import('./app/components/Layout'),
         loading: Loading,
       })} />
-      <Route path="/login" component={Loadable({
+      {/* <Route path="/login" component={Loadable({
         loader: () => import('./app/routers/Login'),
         loading: Loading,
       })} />
       <Route path="/order" component={Loadable({
         loader: () => import('./app/routers/Order'),
         loading: Loading,
-      })} />
+      })} /> */}
     </div>
   </Router>;
 };
