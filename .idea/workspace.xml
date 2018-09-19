@@ -52,7 +52,7 @@
         <counts>
           <entry key="js" value="1" />
           <entry key="jsx" value="530" />
-          <entry key="md" value="327" />
+          <entry key="md" value="339" />
           <entry key="scss" value="140" />
         </counts>
       </usages-collector>
@@ -60,7 +60,7 @@
         <counts>
           <entry key="JSX Harmony" value="530" />
           <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="327" />
+          <entry key="Markdown" value="339" />
           <entry key="SCSS" value="140" />
         </counts>
       </usages-collector>
@@ -90,8 +90,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="52">
-                <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="1" />
+              <first_editor relative-caret-position="208">
+                <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -360,12 +360,12 @@
       <option name="presentableId" value="Default" />
       <updated>1537254324517</updated>
       <workItem from="1537254326397" duration="9121000" />
-      <workItem from="1537326307824" duration="2328000" />
+      <workItem from="1537326307824" duration="2446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11449000" />
+    <option name="totallyTimeSpent" value="11567000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -380,7 +380,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49916804" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916804" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50083196" side_tool="true" weight="0.24973656" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -524,8 +524,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="52">
-            <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="1" />
+          <first_editor relative-caret-position="208">
+            <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
