@@ -2,69 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7388b2c-6ee6-4a3b-b667-7efe19b0e20e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/components/Layout/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/style/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Banner/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Banner/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/DoList/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/DoList/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Layout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Layout/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Loading/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Loading/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Test/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Title/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Title/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ToDo/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ToDo/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routers/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Home/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routers/Home/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Login/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Login/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Oppointment/components/ServerCommon/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Oppointment/components/ServerCommon/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Oppointment/components/ServerDoctor/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Oppointment/components/ServerDoctor/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Oppointment/components/ServerSite/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Oppointment/components/ServerSite/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Oppointment/components/ServerType/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Oppointment/components/ServerType/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Oppointment/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Oppointment/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/OrderPay/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/OrderPay/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/OrderPayCoupon/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/OrderPayCoupon/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/OrderPayment/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/OrderPayment/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/OrderPaymentSuccess/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/OrderPaymentSuccess/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/OrderPreview/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/OrderPreview/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/PayBottom/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/components/PayBottom/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Order/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Sign/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routers/Sign/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/style/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/style/vaiable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/vaiable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/lib/antd.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/lib/index.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/lib/variable.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/page_base/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/until/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/until/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/until/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/until/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/until/urlTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/until/urlTemplate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/do/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/do/action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/do/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/do/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -88,9 +26,10 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="js" value="9" />
+          <entry key="js" value="12" />
           <entry key="json" value="1" />
           <entry key="jsx" value="6" />
+          <entry key="md" value="1" />
           <entry key="scss" value="12" />
         </counts>
       </usages-collector>
@@ -99,7 +38,8 @@
           <entry key="HTML" value="2" />
           <entry key="JSON" value="1" />
           <entry key="JSX Harmony" value="6" />
-          <entry key="JavaScript" value="9" />
+          <entry key="JavaScript" value="12" />
+          <entry key="Markdown" value="1" />
           <entry key="SCSS" value="12" />
         </counts>
       </usages-collector>
@@ -112,6 +52,7 @@
         <counts>
           <entry key="js" value="1" />
           <entry key="jsx" value="530" />
+          <entry key="md" value="327" />
           <entry key="scss" value="140" />
         </counts>
       </usages-collector>
@@ -119,6 +60,7 @@
         <counts>
           <entry key="JSX Harmony" value="530" />
           <entry key="JavaScript" value="1" />
+          <entry key="Markdown" value="327" />
           <entry key="SCSS" value="140" />
         </counts>
       </usages-collector>
@@ -126,11 +68,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/Layout/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state relative-caret-position="621">
+              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="52">
+                <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/do/action.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/do/reducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -184,6 +161,7 @@
         <option value="$PROJECT_DIR$/src/index.scss" />
         <option value="$PROJECT_DIR$/src/app/components/Layout/index.scss" />
         <option value="$PROJECT_DIR$/src/app/components/Layout/index.jsx" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -204,9 +182,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="476" />
-    <option name="width" value="1451" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -299,7 +278,20 @@
               <item name="react-flimList" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-flimList" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-flimList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-flimList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="reducers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-flimList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-flimList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="do" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-flimList" type="b2602c69:ProjectViewProjectNode" />
@@ -316,7 +308,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue-filmList" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -368,12 +360,21 @@
       <option name="presentableId" value="Default" />
       <updated>1537254324517</updated>
       <workItem from="1537254326397" duration="9121000" />
-      <workItem from="1537326307824" duration="921000" />
+      <workItem from="1537326307824" duration="2328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10042000" />
+    <option name="totallyTimeSpent" value="11449000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -389,11 +390,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32998884" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32998884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -465,13 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-808">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/prop-types/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -496,17 +490,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/Layout/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/Layout/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/do/action.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/do/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/Layout/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="52">
+            <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
