@@ -1,7 +1,7 @@
 >声明：所有的接口都是爬取得豆瓣的电影，该项目只是用来个人练习和学习使用，不涉及任何商用用途。如果侵权，请及时联系本人，本人会尽快删除。
 
 # react-redux-xy react全家桶搭建
-  * >前端技术迭代很快，所以作为一个前端，我们需要不停学习，此项目用来练习react技术栈(vue技术栈请转 => [vue-filmList](https://github.com/LanceXuGood/vue-flimList))
+  * >前端技术迭代很快，所以作为一个前端，我们需要不停学习，此项目用来练习react技术栈(vue技术栈请转 => [vue-filmList](https://github.com/LanceXuGood/vue-filmList))
   * >webpack3 + es6 + babel + eslint + react + react-router v4 + redux
  
 ## 启动 运行
